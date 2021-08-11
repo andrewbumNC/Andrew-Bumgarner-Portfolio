@@ -247,6 +247,11 @@ color: rgb(32, 32, 32);
     .subject aside {
         border-right: none;
         border-bottom: solid rgb(32, 32, 32);
+        width: 79%;
+    }
+
+    .subject aside h2 {
+        text-align: center;
     }
 
     .work-subject {flex-direction: column;
@@ -268,5 +273,17 @@ color: rgb(32, 32, 32);
             width: 80.8%;
             position: relative;
             border: cadetblue solid;
+
     }
+    .work-subject aside {
+        border-bottom: solid rgb(32, 32, 32);
+        border-right: none;
+        width: 79%;
+        
   }
+
+.work-subject aside h2 {
+    text-align: center;
+}
+
+}
