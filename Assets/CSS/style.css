@@ -1,0 +1,272 @@
+* {
+   box-sizing: border-box;
+   color: rgb(32, 32, 32);
+   scroll-behavior: smooth;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(32, 32, 32);
+    padding: 1% 0;
+}
+
+
+h1 {
+    font-size: 200%;
+    width: 25%;
+    text-align: right;
+    background-color: cadetblue;
+    padding: .5%;
+    color: rgb(32, 32, 32);
+    
+
+}
+
+nav{
+    width: 45%;
+}
+
+
+header nav ul {
+display: flex;
+}
+
+header nav ul li { 
+    padding: 10px;
+    font-size: 150%;
+    margin: 1%;
+    border-bottom: solid cadetblue;
+    padding-bottom: .05%;
+    color: cadetblue;
+}
+
+nav a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+nav a:visited {
+    color: cadetblue;
+    text-decoration: none;
+    direction: none;
+    
+}
+
+
+.background-image {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1.5%;
+    height: 20vw;
+    background-color: lightslategrey;
+    background: url(../images/Dali-Tigers.jpg) no-repeat;
+    background-size: cover;
+    }
+
+.background-image p {
+
+    border: solid cadetblue;
+    padding: 1%;
+    float: right;
+    position: relative;
+    top: 75%;
+    right: 14%;
+    background-color: cadetblue;
+    font-size: 130%;
+    width: fit-content;
+    height: fit-content;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+
+.subject {
+
+    display: flex;
+
+}
+
+.subject aside {
+    width: 19%;
+    border-right: solid rgb(32, 32, 32);
+    margin: 1%;
+}
+
+.subject h2 {
+    font-size: 200%;
+    height: 100%;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.subject .content {
+    padding: 2% 1% 1% 1%;
+    width: 63.5%;
+    
+   
+}
+
+/* this is for the my work section */
+
+.work-subject {
+
+    display: flex;
+
+}
+
+.work-subject aside {
+width: 25%;
+border-right: solid rgb(32, 32, 32);
+    margin: 1% 0%;
+}
+
+.work-subject h2 {
+    font-size: 200%;
+    height: 100%;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.work-subject .work-content {
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.work-content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.best-project {
+    height: 30vw;
+    margin: .5%;
+    width: 80.8%;
+    position: relative;
+    border: cadetblue solid;
+}
+
+.small-project {
+    width: 40%;
+    height: 10vw;
+    border: solid cadetblue;
+    margin: .5%;
+    position: relative;
+}
+
+.best-project div {
+
+    width: fit-content;
+    height: fit-content;
+    border: solid cadetblue;
+    position: absolute;
+    bottom: 4%;
+    padding: 1%;
+    line-height: 200%;
+    left: 0;
+background-color: cadetblue;
+
+}
+
+.best-project div h3 {
+font-size: 150%;
+
+color: rgb(32, 32, 32);;
+}
+
+.small-project div {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    border: solid cadetblue;
+    bottom: 12%;
+    left: 0;
+    padding: 1%;
+    background-color: cadetblue;
+    line-height: 200%;
+}
+.small-project div h3 {
+    font-size: 150%;
+
+color: rgb(32, 32, 32);
+}
+
+
+/* Contact-Me Section */
+
+
+.contact-me {
+
+    display: flex;
+    padding: 2%;
+}
+
+.contact-me aside {
+
+    width: 18.7%;
+    border-right: solid rgb(32, 32, 32);
+    padding: 1%;
+}
+
+.contact-me aside h2 {
+    font-size: 200%;
+    text-align: right;
+    padding: 7%;
+    height: 100%;
+}
+
+.contact-me ul {
+    width: 65%;
+    display: flex;
+    margin: 1%;
+    justify-content: space-between;
+    font-size: 120%;
+    align-items: center;
+}
+.contact-me ul li {
+   
+    text-decoration: underline;
+    height: fit-content;
+}
+
+
+
+@media screen and (max-width: 968px) {
+    .subject {flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .subject aside {
+        border-right: none;
+        border-bottom: solid rgb(32, 32, 32);
+    }
+
+    .work-subject {flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .work-content {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .small-project {
+        
+            height: 30vw;
+            margin: .5%;
+            width: 80.8%;
+            position: relative;
+            border: cadetblue solid;
+    }
+  }
