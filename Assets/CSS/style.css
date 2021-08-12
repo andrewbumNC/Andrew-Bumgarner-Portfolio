@@ -1,8 +1,23 @@
+
+
+
+
+
+:root {
+    --dark-color: rgb(32, 32, 32);
+    --light-blue: rgb(243, 240, 255);
+    --turqoise-blue: cadetblue;
+
+    }
+
+ 
 * {
     box-sizing: border-box;
     color: rgb(32, 32, 32);
     scroll-behavior: smooth;
 }
+
+/* ------------ This CSS is for the header and nav bar --------------- */
 
 header {
     display: flex;
@@ -25,10 +40,6 @@ header ul {
     padding: 1.5% 0% 1.5%;
 }
 
-.nav {
-    width: 100%;
-    background-color: cadetblue;
-}
 
 
 header ul li {
@@ -36,12 +47,10 @@ border-bottom: solid 3px;
 
 }
 
-
-
-
-
-
-
+.nav {
+    width: 100%;
+    background-color: cadetblue;
+}
 
 
 
@@ -55,6 +64,12 @@ nav a:visited {
     text-decoration: none;
     direction: none;
 
+}
+
+/* ------ This section is for the main content ---------  */
+
+main {
+    background-color: aliceblue;
 }
 
 
@@ -83,31 +98,27 @@ nav a:visited {
     height: fit-content;
 }
 
-main {
-    background-color: aliceblue;
-}
 
-
-.subject {
+.about-me {
 
     display: flex;
 
 }
 
-.subject aside {
+.about-me aside {
     width: 19%;
     border-right: solid rgb(32, 32, 32);
     margin: 1%;
 }
 
-.subject h2 {
+.about-me h2 {
     font-size: 200%;
     height: 100%;
     text-align: right;
     padding: 10px 20px;
 }
 
-.subject .content {
+.about-me .content {
     padding: 2% 1% 1% 1%;
     width: 63.5%;
 
@@ -116,26 +127,26 @@ main {
 
 /* this is for the my work section */
 
-.work-subject {
+.my-work {
 
     display: flex;
 
 }
 
-.work-subject aside {
+.my-work aside {
     width: 25%;
     border-right: solid rgb(32, 32, 32);
     margin: 1% 0%;
 }
 
-.work-subject h2 {
+.my-work h2 {
     font-size: 200%;
     height: 100%;
     text-align: right;
     padding: 10px 20px;
 }
 
-.work-subject .work-content {
+.my-work .work-content {
     padding: 10px;
     width: 100%;
 
@@ -147,6 +158,8 @@ main {
     height: 100%;
 }
 
+/* within the my work section this is for the large placeholder one div to highlight the app I'm most proud of */
+
 .best-project {
     height: 30vw;
     margin: .5%;
@@ -155,26 +168,8 @@ main {
     border: cadetblue solid;
     background-image: url(../images/landscape-painting.jpeg);
     background-size: 100% 100%;
-    
-}
 
-.background-hyperlink {
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
-
-.small-project {
-    width: 40%;
-    height: 10vw;
-    border: solid cadetblue;
-    margin: .5%;
-    position: relative;
-}
-
 .best-project div {
 
     width: fit-content;
@@ -197,6 +192,28 @@ main {
 }
 
 
+/* linking my work section to future apps. Placeholder link in there currently. */
+
+.background-hyperlink {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* This section is for my smaller apps */
+
+.small-project {
+    width: 40%;
+    height: 10vw;
+    border: solid cadetblue;
+    margin: .5%;
+    position: relative;
+}
+
+
 .small-project div {
     width: fit-content;
     height: fit-content;
@@ -215,6 +232,8 @@ main {
 
     color: rgb(32, 32, 32);
 }
+
+/* background images, in the future these will be pictures of my apps */
 
 #heaven {
     background-image: url(../images/slice-of-heaven.jpeg);
@@ -291,24 +310,24 @@ main {
 
 
 
-    .subject {
+    .about-me {
         flex-direction: column;
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
 
-    .subject aside {
+    .about-me aside {
         border-right: none;
         border-bottom: solid rgb(32, 32, 32);
         width: 79%;
     }
 
-    .subject aside h2 {
+    .about-me aside h2 {
         text-align: center;
     }
 
-    .work-subject {
+    .my-work {
         flex-direction: column;
         flex-direction: column;
         text-align: center;
@@ -331,14 +350,14 @@ main {
 
     }
 
-    .work-subject aside {
+    .my-work aside {
         border-bottom: solid rgb(32, 32, 32);
         border-right: none;
         width: 79%;
 
     }
 
-    .work-subject h2 {
+    .my-work h2 {
         text-align: center;
     }
 
