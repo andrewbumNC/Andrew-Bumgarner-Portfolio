@@ -1,58 +1,60 @@
 * {
-   box-sizing: border-box;
-   color: rgb(32, 32, 32);
-   scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: rgb(32, 32, 32);
+    scroll-behavior: smooth;
 }
-
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color:rgb(32, 32, 32);
-    padding: 1% 0;
 }
 
-
-h1 {
-    font-size: 200%;
-    width: 25%;
+header h1 {
+    width: 24%;
+    background-color: rgb(32, 32, 32);
+    color: aliceblue;
     text-align: right;
-    background-color: cadetblue;
-    padding: .5%;
-    color: rgb(32, 32, 32);
-    
-
-}
-
-nav{
-    width: 45%;
-}
-
-
-header nav ul {
-display: flex;
-}
-
-header nav ul li { 
-    padding: 10px;
+    padding: 1%;
     font-size: 150%;
-    margin: 1%;
-    border-bottom: solid cadetblue;
-    padding-bottom: .05%;
-    color: cadetblue;
 }
+
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5% 0% 1.5%;
+}
+
+.nav {
+    width: 100%;
+    background-color: cadetblue;
+}
+
+
+header ul li {
+border-bottom: solid 3px;
+
+}
+
+
+
+
+
+
+
+
+
 
 nav a {
     text-decoration: none;
-    color: cadetblue;
+    color: rgb(32, 32, 32);
 }
 
 nav a:visited {
-    color: cadetblue;
+    color: rgb(32, 32, 32);
     text-decoration: none;
     direction: none;
-    
+
 }
 
 
@@ -63,9 +65,9 @@ nav a:visited {
     padding: 1.5%;
     height: 20vw;
     background-color: lightslategrey;
-    background: url(../images/Dali-Tigers.jpg) no-repeat;
-    background-size: cover;
-    }
+    background: url(../images/blue.jpg);
+    background-size: 100% 100%;
+}
 
 .background-image p {
 
@@ -108,8 +110,8 @@ main {
 .subject .content {
     padding: 2% 1% 1% 1%;
     width: 63.5%;
-    
-   
+
+
 }
 
 /* this is for the my work section */
@@ -121,8 +123,8 @@ main {
 }
 
 .work-subject aside {
-width: 25%;
-border-right: solid rgb(32, 32, 32);
+    width: 25%;
+    border-right: solid rgb(32, 32, 32);
     margin: 1% 0%;
 }
 
@@ -136,7 +138,7 @@ border-right: solid rgb(32, 32, 32);
 .work-subject .work-content {
     padding: 10px;
     width: 100%;
-    
+
 }
 
 .work-content {
@@ -151,6 +153,18 @@ border-right: solid rgb(32, 32, 32);
     width: 80.8%;
     position: relative;
     border: cadetblue solid;
+    background-image: url(../images/landscape-painting.jpeg);
+    background-size: 100% 100%;
+    
+}
+
+.background-hyperlink {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .small-project {
@@ -171,15 +185,17 @@ border-right: solid rgb(32, 32, 32);
     padding: 1%;
     line-height: 200%;
     left: 0;
-background-color: cadetblue;
+    background-color: cadetblue;
 
 }
 
 .best-project div h3 {
-font-size: 150%;
+    font-size: 150%;
 
-color: rgb(32, 32, 32);;
+    color: rgb(32, 32, 32);
+    ;
 }
+
 
 .small-project div {
     width: fit-content;
@@ -191,13 +207,34 @@ color: rgb(32, 32, 32);;
     padding: 1%;
     background-color: cadetblue;
     line-height: 200%;
+
 }
+
 .small-project div h3 {
     font-size: 150%;
 
-color: rgb(32, 32, 32);
+    color: rgb(32, 32, 32);
 }
 
+#heaven {
+    background-image: url(../images/slice-of-heaven.jpeg);
+    background-size: 100% 100%;
+}
+
+#tree {
+    background-image: url(../images/blue.jpg);
+    background-size: 100% 100%;
+}
+
+#art-3 {
+    background-image: url(../images/flowers.jpeg);
+    background-size: 100% 100%;
+}
+
+#art-4 {
+    background: url(../images/face-painting.jpeg);
+    background-size: 100% 100%;
+}
 
 /* Contact-Me Section */
 
@@ -230,8 +267,9 @@ color: rgb(32, 32, 32);
     font-size: 120%;
     align-items: center;
 }
+
 .contact-me ul li {
-   
+
     text-decoration: underline;
     height: fit-content;
 }
@@ -239,11 +277,27 @@ color: rgb(32, 32, 32);
 
 
 @media screen and (max-width: 968px) {
-    .subject {flex-direction: column;
+
+    header {
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        padding: 1%;
+    }
+
+
+
+    .subject {
+        flex-direction: column;
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
+
     .subject aside {
         border-right: none;
         border-bottom: solid rgb(32, 32, 32);
@@ -254,58 +308,63 @@ color: rgb(32, 32, 32);
         text-align: center;
     }
 
-    .work-subject {flex-direction: column;
+    .work-subject {
+        flex-direction: column;
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
-    
+
     .work-content {
         flex-direction: column;
         align-items: center;
-        
+
     }
 
     .small-project {
-        
-            height: 30vw;
-            margin: .5%;
-            width: 80.8%;
-            position: relative;
-            border: cadetblue solid;
+
+        height: 30vw;
+        margin: .5%;
+        width: 80.8%;
+        position: relative;
+        border: cadetblue solid;
 
     }
+
     .work-subject aside {
         border-bottom: solid rgb(32, 32, 32);
         border-right: none;
         width: 79%;
-        
-  }
-  .work-subject h2 { 
-      text-align: center;
-  }
+
+    }
+
+    .work-subject h2 {
+        text-align: center;
+    }
 
 
-.contact-me {
-    flex-direction: column;
-    align-items: center;
-}
+    .contact-me {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.contact-me aside {
-    border-right: none;
-    border-bottom: solid;
-    width: 82%;
-}
+    .contact-me aside {
+        border-right: none;
+        border-bottom: solid;
+        width: 82%;
+    }
 
-.contact-me aside h2 {
-    text-align: center;
-    padding: 1%;
-}
-.contact-me ul {
-    flex-direction: column;
+    .contact-me aside h2 {
+        text-align: center;
+        padding: 1%;
+    }
 
-}
-.contact-me li {
-    padding: 2%;
-}
+    .contact-me ul {
+        flex-direction: column;
+
+    }
+
+    .contact-me li {
+        padding: 2%;
+    }
 }
