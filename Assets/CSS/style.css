@@ -125,7 +125,7 @@ main {
 
 }
 
-/* this is for the my work section */
+/* this is for the my work section in the main content */
 
 .my-work {
 
@@ -233,29 +233,7 @@ main {
     color: rgb(32, 32, 32);
 }
 
-/* background images, in the future these will be pictures of my apps */
-
-#heaven {
-    background-image: url(../images/slice-of-heaven.jpeg);
-    background-size: 100% 100%;
-}
-
-#tree {
-    background-image: url(../images/blue.jpg);
-    background-size: 100% 100%;
-}
-
-#art-3 {
-    background-image: url(../images/flowers.jpeg);
-    background-size: 100% 100%;
-}
-
-#art-4 {
-    background: url(../images/face-painting.jpeg);
-    background-size: 100% 100%;
-}
-
-/* Contact-Me Section */
+/* Contact-Me Section with in the my work section */
 
 
 .contact-me {
@@ -294,6 +272,30 @@ main {
 }
 
 
+/* background images, in the future these will be pictures of my apps */
+
+#heaven {
+    background-image: url(../images/slice-of-heaven.jpeg);
+    background-size: 100% 100%;
+}
+
+#tree {
+    background-image: url(../images/blue.jpg);
+    background-size: 100% 100%;
+}
+
+#art-3 {
+    background-image: url(../images/flowers.jpeg);
+    background-size: 100% 100%;
+}
+
+#art-4 {
+    background: url(../images/face-painting.jpeg);
+    background-size: 100% 100%;
+}
+
+
+/* This section is for screens smaller than a desktop/laptop screen ( for mobile and tablets) */
 
 @media screen and (max-width: 968px) {
 
