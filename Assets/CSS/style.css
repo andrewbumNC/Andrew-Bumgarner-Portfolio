@@ -22,10 +22,11 @@
 header {
     display: flex;
     justify-content: space-between;
+    background-color: var(--turqoise-blue);
 }
 
 header h1 {
-    width: 24%;
+    width: 20%;
     background-color: rgb(32, 32, 32);
     color: aliceblue;
     text-align: right;
@@ -37,7 +38,7 @@ header h1 {
 header ul {
     display: flex;
     justify-content: space-evenly;
-    padding: 1.5% 0% 1.5%;
+    padding: 2.5% 15% .5%;
 }
 
 
@@ -48,7 +49,7 @@ border-bottom: solid 3px;
 }
 
 .nav {
-    width: 100%;
+    width: 72%;
     background-color: cadetblue;
 }
 
@@ -162,13 +163,13 @@ main {
 
 .best-project {
     height: 30vw;
-    margin: .5%;
+    margin: 1.5%;
     width: 80.8%;
     position: relative;
     border: cadetblue solid;
     background-image: url(../images/landscape-painting.jpeg);
     background-size: 100% 100%;
-
+    transition: box-shadow 1s ease-in-out;
 }
 .best-project div {
 
@@ -190,6 +191,9 @@ main {
     color: rgb(32, 32, 32);
     ;
 }
+.best-project:hover {
+    box-shadow: 0px 1px 10px 6px;
+}
 
 
 /* linking my work section to future apps. Placeholder link in there currently. */
@@ -206,11 +210,12 @@ main {
 /* This section is for my smaller apps */
 
 .small-project {
-    width: 40%;
+    width: 39%;
     height: 10vw;
     border: solid cadetblue;
-    margin: .5%;
+    margin: 1.5%;
     position: relative;
+    transition: box-shadow 1s ease-in-out;
 }
 
 
@@ -271,6 +276,9 @@ main {
     height: fit-content;
 }
 
+.small-project:hover {
+    box-shadow: 0px 1px 10px 6px;
+}
 
 /* background images, in the future these will be pictures of my apps */
 
@@ -302,6 +310,8 @@ main {
     header {
         flex-direction: column;
         padding: 0%;
+        align-items: center;
+
     }
 
     header h1 {
@@ -345,7 +355,7 @@ main {
     .small-project {
 
         height: 30vw;
-        margin: .5%;
+        margin: 1.5%;
         width: 80.8%;
         position: relative;
         border: cadetblue solid;
