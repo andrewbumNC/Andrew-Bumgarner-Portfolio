@@ -1,4 +1,44 @@
-# 02 Advanced CSS: Portfolio
+
+# 02 Advanced CSS: Andrew Bumgarner Portfolio
+
+
+
+# Table of Contents
+
+
+* Introduction
+* Requirements
+* Orginial Instructions
+
+
+
+# Introduction: 
+
+The primary purpose of this page is to highlight my upcoming work as a developer! This is my first completed version, but I plan to update it with cleaner styling in the near future. Additionally the "my work" section has background images of art I like and should not be confused with art I created. The background images are simply nice placeholders until I develop more apps. 
+
+# Requirements
+
+You can find a detailed list of requirements below in the original instructions but I wanted to summarize them here as well. I intentionally left out a headshot photo for now because it's my personal belief that resumes or anything used in the hiring process should omit headshot photos to help prevent unconcious biases from taking affect. The requirements for this project are: 
+
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+
+
+
+# Orginal Instructions: Below you'll find the original instructions and grading rubric: 
+
+
 
 ## Your Task
 
