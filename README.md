@@ -16,6 +16,8 @@
 
 The primary purpose of this page is to highlight my upcoming work as a developer! This is my first completed version, but I plan to update it with cleaner styling in the near future. Additionally the "my work" section has background images of art I like and should not be confused with art I created. The background images are simply nice placeholders until I develop more apps. 
 
+Page URL: https://andrewbumnc.github.io/Andrew-Bumgarner-Portfolio/ 
+
 # Requirements
 
 You can find a detailed list of requirements below in the original instructions but I wanted to summarize them here as well. I intentionally left out a headshot photo for now because it's my personal belief that resumes or anything used in the hiring process should omit headshot photos to help prevent unconcious biases from taking affect. The requirements for this project are: 
