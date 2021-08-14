@@ -398,4 +398,17 @@ main {
     .contact-me li {
         padding: 2%;
     }
+
+    .best-project div {
+       
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            border: solid cadetblue;
+            bottom: 12%;
+            left: 0;
+            padding: 1%;
+            background-color: cadetblue;
+            line-height: 200%;
+    }
 }
